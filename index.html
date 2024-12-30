@@ -171,7 +171,9 @@
             <h2 class="section-team">Our Team</h2>
             <ul class="page-text-bord">
                 <li class="section-threeli">
-                    <img src="./images/our-team/img(1).jpg" alt="Mark Guerrero" width="264">
+                    <img src="./images/our-team/img(1).jpg"
+                    srcset="./images/our-team/MarkGuerrero@x2.jpg"
+                    alt="Mark Guerrero" width="264">
                     <div class="third-section-item-description">
                     <h3 class="txt-icon">Mark Guerrero</h3>
                     <p class="pxp-icon">Product Designer</p>
@@ -208,7 +210,9 @@
                     </div>
                 </li>
                 <li class="section-threeli">
-                    <img src="./images/our-team/img(2).jpg" alt="Tom Ford" width="264">
+                    <img src="./images/our-team/img(2).jpg" 
+                    srcset="./images/our-team/TomFord@x2.jpg"
+                    alt="Tom Ford" width="264">
                     <div class="third-section-item-description">
                     <h3 class="txt-icon">Tom Ford</h3>
                     <p class="pxp-icon">Frontend Developer</p>
@@ -237,28 +241,30 @@
                     </div>
                 </li>
                 <li class="section-threeli">
-                    <img src="./images/our-team/img(3).jpg" alt="Camila Garcia" width="264">
+                    <img src="./images/our-team/img(3).jpg" 
+                    srcset="./images/our-team/CamilaGarcia@x2.jpg"
+                    alt="Camila Garcia" width="264">
                     <div class="third-section-item-description">
                     <h3 class="txt-icon">Camila Garcia</h3>
                     <p class="pxp-icon">Marketing</p>
                     <ul class="list-person-social">
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg></a>
                         </li>
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg></a>
                         </li>
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg></a>
                         </li>
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg></a>
                         </li>
@@ -266,30 +272,33 @@
                     </div>
                 </li>
                 <li class="section-threeli">
-                    <img src="./images/our-team/img(4).jpg" alt="Daniel Wilson" width="264">
+                    <img src="./images/our-team/img(4).jpg" 
+                    srcset="./images/our-team/DanielWilson@x2.jpg"
+                    alt="Daniel Wilson" width="264">
                     <div class="third-section-item-description">
                     <h3 class="txt-icon">Daniel Wilson</h3>
                     <p class="pxp-icon">UI Designer</p>
                     <ul class="list-person-social">
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg></a>
                         </li>
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg></a>
                         </li>
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg></a>
                         </li>
                         <li class="list-icon-team-social">
-                            <a href="#" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
+                            <a href="" class="link-team-social"><svg class="team-icon-social" width="16" height="16">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg></a>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                     </div>
@@ -300,14 +309,26 @@
         
 
     <!--section 4 -->
-    <section class="last-section hidden">
-    <div class="container">
+    <section class="last-section">
+    <div class="container portfolio-container">
         <h2 class="text-portfolio">Our Portfolio</h2>
         <ul class="page-txt-next">
             <li class="page-txt-next-item">
                 <div class="forth-section-image">
+                <picture>
+                    <source media="(min-width: 1158px)" 
+                    srcset="./images/our-portfolio/our-desktop/DescBankingApp.jpg,
+                    ./images/our-portfolio/our-desktop/DescBankingApp@x2.jpg" />
+                    <source media="(min-width: 768px)"
+                    srcset="./images/our-portfolio/our-tablet/TabletBankingApp.jpg,
+                    ./images/our-portfolio/our-tablet/TabletBankingApp@x2.jpg" />
+                    <source media="(max-width: 767px)"
+                    srcset="./images/our-portfolio/our-phone/PhoneBankingApp.jpg,
+                    ./images/our-portfolio/our-phone/PhoneBankingApp@x2.jpg" />
+                </picture>    
                 <img src="./images/our-portfolio/img1.jpg" alt="Bankink App" width="360">
                 <p class="overlay">
+                
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                     · Cloud Storage App
@@ -320,6 +341,17 @@
             </li>
             <li class="page-txt-next-item">
                 <div class="forth-section-image">
+                <picture>
+                    <source media="(min-width: 1158px)" 
+                    srcset="./images/our-portfolio/our-desktop/Marketing.jpg,
+                    ./images/our-portfolio/our-desktop/Marketing@x2.jpg" />
+                    <source media="(min-width: 768px)"
+                    srcset="./images/our-portfolio/our-tablet/TabletMarketing.jpg,
+                    ./images/our-portfolio/our-tablet/TabletMarketing@x2.jpg" />
+                    <source media="(max-width: 767px)"
+                    srcset="./images/our-portfolio/our-phone/PhoneMarketing.jpg,
+                    ./images/our-portfolio/our-phone/PhoneMarketing@x2.jpg" />
+                </picture>
                 <img src="./images/our-portfolio/img2.jpg" alt="Cashless Payment" width="360">
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -334,6 +366,17 @@
             </li>
             <li class="page-txt-next-item">
                 <div class="forth-section-image">
+                    <picture>
+                        <source media="(min-width: 1158px)" 
+                        srcset="./images/our-portfolio/our-desktop/DescApp.jpg,
+                        ./images/our-portfolio/our-desktop/DescApp@x2.jpg" />
+                        <source media="(min-width: 768px)"
+                        srcset="./images/our-portfolio/our-tablet/TabletApp.jpg,
+                        ./images/our-portfolio/our-tablet/TabletApp@x2.jpg" />
+                        <source media="(max-width: 767px)"
+                        srcset="./images/our-portfolio/our-phone/PhoneApp.jpg,
+                        ./images/our-portfolio/our-phone/PhoneApp@x2.jpg" />
+                    </picture>
                 <img src="./images/our-portfolio/img3.jpg" alt="Meditation App" width="360">
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -348,6 +391,17 @@
             </li>
             <li class="page-txt-next-item">
                 <div class="forth-section-image">
+                    <picture>
+                        <source media="(min-width: 1158px)" 
+                        srcset="./images/our-portfolio/our-desktop/DescTaxi.jpg,
+                        ./images/our-portfolio/our-desktop/DescTaxi@x2.jpg" />
+                        <source media="(min-width: 768px)"
+                        srcset="./images/our-portfolio/our-tablet/TabletTaxi.jpg,
+                        ./images/our-portfolio/our-tablet/TabletTaxi@x2.jpg" />
+                        <source media="(max-width: 767px)"
+                        srcset="./images/our-portfolio/our-phone/PhoneTaxi.jpg,
+                        ./images/our-portfolio/our-phone/PhoneTaxi@x2.jpg" />
+                    </picture>
                 <img src="./images/our-portfolio/img4.jpg" alt="Taxi Service" width="360">
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -362,6 +416,17 @@
             </li>
             <li class="page-txt-next-item">
                 <div class="forth-section-image">
+                    <picture>
+                        <source media="(min-width: 1158px)" 
+                        srcset="./images/our-portfolio/our-desktop/DescDesign.jpg,
+                        ./images/our-portfolio/our-desktop/DescDesign@x2.jpg" />
+                        <source media="(min-width: 768px)"
+                        srcset="./images/our-portfolio/our-tablet/TabletDesign.jpg,
+                        ./images/our-portfolio/our-tablet/TabletDesign@x2.jpg" />
+                        <source media="(max-width: 767px)"
+                        srcset="./images/our-portfolio/our-phone/PhoneDesign.jpg,
+                        ./images/our-portfolio/our-phone/PhoneDesign@x2.jpg" />
+                    </picture>
                 <img src="./images/our-portfolio/img5.jpg" alt="Screen Illustrations" width="360">
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -376,6 +441,17 @@
             </li>
             <li class="page-txt-next-item">
                 <div class="forth-section-image">
+                    <picture>
+                        <source media="(min-width: 1158px)" 
+                        srcset="./images/our-portfolio/our-desktop/DescCours.jpg,
+                        ./images/our-portfolio/our-desktop/DescCours@x2.jpg" />
+                        <source media="(min-width: 768px)"
+                        srcset="./images/our-portfolio/our-tablet/TabletCours.jpg,
+                        ./images/our-portfolio/our-tablet/TabletCours@x2.jpg" />
+                        <source media="(max-width: 767px)"
+                        srcset="./images/our-portfolio/our-phone/PhoneCours.jpg,
+                        ./images/our-portfolio/our-phone/PhoneCours@x2.jpg" />
+                    </picture>
                 <img src="./images/our-portfolio/img6.jpg" alt="Online Courses" width="360">
                 <p class="overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
