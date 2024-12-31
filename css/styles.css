@@ -131,6 +131,7 @@ body {
         gap: 40px;
     }
 
+
     .page-address {
         font-style: normal;
         display: block;
@@ -155,7 +156,7 @@ body {
         letter-spacing: 0.02em;
         padding: 24px 0;
         position: relative;
-        color: #404bbf;
+        color: #2E2F42;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -274,6 +275,7 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    font-style: normal;
 }
 
 .mobile-menu-container {
@@ -528,6 +530,11 @@ body {
         display: none;
     }
 
+    .page-section-two {
+        padding-top: 52px;
+        padding-bottom: 96px;
+    }
+
     .features-htxt {
         font-weight: 700;
         font-size: 36px;
@@ -548,14 +555,9 @@ body {
     }
 
     .features-text {
-        padding-top: 52px;
         display: flex;
         flex-wrap: wrap;
         gap: 72px;
-    }
-
-    .features-item {
-        padding-bottom: 72px;
     }
 
     @media screen and (min-width: 768px) {
@@ -577,14 +579,14 @@ body {
         }
     }
 
-    @media screen and (min-width: 1156px) {
+    @media screen and (min-width: 1158px) {
         .page-section-two {
             padding-top: 120px;
             padding-bottom: 120px;
         }
 
         .strategy-container {
-            max-width: 1128px;
+            max-width: 1158px;
         }
 
         .features-item {
@@ -663,7 +665,6 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 72px 24px;
     }
 
     .third-section-item-description {
@@ -785,8 +786,7 @@ body {
     
     .page-txt-next-item {
         box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-        background: #fff;
-        max-width: 288px;   
+        background: #fff;   
     }
 
     .forth-section-wrap-text {
@@ -901,7 +901,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
         gap: 72px;  
      }
 
@@ -922,17 +921,12 @@ body {
 
      .footer-text {
         display: block;
-        padding: 0px 16px;
         width: 288px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;  
-     }
-
-     .footer-social-media {
-        padding: 0px 56px;
      }
 
      .media-text {
@@ -1057,10 +1051,7 @@ body {
      }
 
      @media screen and (min-width: 768px) {
-        .footer {
-            padding-left: 108px;
-            padding-right: 108px;  
-        }
+        .footer {}
 
         .container-footer {
             align-items: flex-start;
@@ -1102,7 +1093,6 @@ body {
 
         .modal-input-footer {
             min-width: 264px;
-            margin-right: 24px;
         }
 
         .footer-social-media {
@@ -1133,7 +1123,6 @@ body {
 
         .logo-footer {
             display: inline-block;
-            margin: 16px;
         }
 
         .footer-form {
@@ -1349,7 +1338,8 @@ body {
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: #8E8F99
+        color: #8E8F99;
+        flex-shrink: 0;
     }
 
     .modal-label-checkbox a {
